@@ -4,7 +4,6 @@ variable "vpc_name" {
   default     = "main-vpc"
 }
 
-
 variable "vpc_cidr" {
   description = "CIDR of the main VPC"
   type        = string
@@ -22,9 +21,9 @@ variable "bastion_servers_count" {
   default     = 1
 }
 
-variable "etcd_cluster_servers_count" {
-  description = "Number of etcd cluster nodes to be created"
-  default     = 0
+variable "private_instances_count" {
+  description = "Number of private instances to be created"
+  default     = 3
 }
 
 variable "eks_create_cluster" {
@@ -84,13 +83,17 @@ variable "ssh_user" {
 variable "bastions_subnet_cidr" {
   type        = string
   default     = "192.168.15.0/24"
-  description = "Bastions subnet CIDR block"
+  description = "Bastions subnet CIDR block - Internet exposed"
 }
 
-variable "etcd_subnet_cidr" {
+variable "private_instances_subnet_cidr" {
   type        = string
   default     = "192.168.16.0/24"
-  description = "Etcd cluster subnet CIDR block"
+  description = "Private instances subnet CIDR block - Not internet exposed, accessible through Bastions"
 }
 
-
+variable "ssh_identity_file" {
+  type        = string
+  default     = "~/.ssh/id_rsa_bastion"
+  description = "SSH identity file (ssh private key)"
+}
