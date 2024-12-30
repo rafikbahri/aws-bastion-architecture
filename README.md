@@ -1,6 +1,7 @@
-# 🚀 AWS Bastion Architecture with Terraform and Ansible  
+# 🚀 AWS Bastion Architecture using Terraform
 
 Welcome to `aws-bastion-architecture`! This project helps you deploy a secure **Bastion Host architecture** on AWS using **Terraform** for infrastructure as code. It's simple, secure, and scalable, just what you need to control access to your private AWS resources.  
+This repository complements the Medium article I wrote: [Bastion Architecture on AWS using Terraform](https://medium.com/p/c49c9e5314b1).
 
 ---
 
