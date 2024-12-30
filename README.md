@@ -92,6 +92,6 @@ Found a bug or have a cool idea? Contributions are welcome! Open an issue or sub
 
 ## 🧑‍💻 Author  
 
-Crafted with ❤️ by [Your Name](https://github.com/yourusername).  
+Crafted with ❤️ by [Rafik Bahri](https://github.com/rafikbahri).  
 
 Enjoy building secure, scalable AWS architectures! 🚀  
