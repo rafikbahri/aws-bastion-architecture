@@ -19,7 +19,7 @@ variable "platform" {
 
 variable "bastion_servers_count" {
   description = "Number of bastion nodes to be created"
-  default     = 0
+  default     = 1
 }
 
 variable "etcd_cluster_servers_count" {
